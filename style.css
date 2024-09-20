@@ -17,8 +17,8 @@ body, html {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    filter: blur(8px); /* This applies the blur effect to the background */
-    -webkit-filter: blur(8px); /* Safari support for blur effect */
+    filter: blur(6px); /* This applies the blur effect to the background */
+    -webkit-filter: blur(6px); /* Safari support for blur effect */
 }
 
 .top-bar {

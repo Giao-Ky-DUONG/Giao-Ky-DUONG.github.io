@@ -17,6 +17,8 @@ body, html {
     background-size: cover;
     background-position: center;
     z-index: -1;
+    filter: blur(8px); /* This applies the blur effect to the background */
+    -webkit-filter: blur(8px); /* Safari support for blur effect */
 }
 
 .top-bar {
@@ -46,16 +48,16 @@ body, html {
 
 .photo-container {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 150px; /* Adjusted to move the photo below the navigation bar */
+    left: 50px;
     z-index: 100;
 }
 
 .personal-photo {
-    width: 100px;
-    height: 100px;
+    width: 300px; /* Increased the size of the profile picture */
+    height: 300px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 5px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 

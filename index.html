@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+    <script>
+        // JavaScript to handle showing and hiding sections
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the clicked section
+            var targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+        }
+
+        // Run this function when the page loads to hide all sections
+        window.onload = function() {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+        }
+    </script>
 </head>
 <body>
 
-    <!-- Full-page background image -->
-    <div class="background-image"></div>
-
     <!-- Top navigation bar -->
     <div class="top-bar">
-        <a href="#cv">CV</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#blog">Blog</a>
-    </div>
-
-    <!-- Personal Photo -->
-    <div class="photo-container">
-        <img src="your-photo.jpg" alt="Your Photo" class="personal-photo">
+        <a href="#" onclick="showSection('cv')">CV</a>
+        <a href="#" onclick="showSection('publications')">Publications</a>
+        <a href="#" onclick="showSection('teaching')">Teaching</a>
+        <a href="#" onclick="showSection('blog')">Blog</a>
     </div>
 
     <!-- CV Section -->
@@ -35,7 +51,6 @@
         <h2>Publications</h2>
         <ul>
             <li>Author, Title of Paper, Journal Name, Year, Volume, Pages, DOI.</li>
-            <!-- Add more publications in the same format -->
         </ul>
     </section>
 
@@ -46,7 +61,6 @@
         <ul>
             <li>2023</li>
             <li>2022</li>
-            <!-- Add more teaching years here -->
         </ul>
         <p>Upload Lecture Notes (PDF):</p>
         <a href="lecture-notes.pdf" download>Lecture Notes (PDF)</a>
@@ -60,11 +74,6 @@
             <p>This is where your blog content will go. You can update this section with your personal thoughts or research highlights.</p>
         </article>
     </section>
-
-    <!-- Bottom contact bar -->
-    <div class="bottom-bar">
-        <p>Contact: your.email@example.com | Your Work Address</p>
-    </div>
 
 </body>
 </html>

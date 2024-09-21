@@ -41,33 +41,29 @@ body, html {
 
 /* Section styling for all pages */
 section {
-    margin-top: 100px; /* Add space below the navigation bar */
-    padding: 40px;
-    text-align: center; /* Center the content */
-    max-width: 800px; /* Limit width for better readability */
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 80px; /* Create space below the navigation bar */
+    padding: 20px 40px; /* Add padding around the content */
+    text-align: left; /* Left-align the content */
 }
 
+/* Heading styles */
 h2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #0044cc;
-    margin-bottom: 40px;
-    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 /* Button styling for downloads */
 a.download-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 15px 25px;
+    padding: 12px 20px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
 a.download-btn:hover {

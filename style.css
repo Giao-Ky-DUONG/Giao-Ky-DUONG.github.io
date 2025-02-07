@@ -39,9 +39,30 @@ body, html {
     border-radius: 5px;
 }
 
+/* Profile Photo Container */
+.photo-container {
+    position: absolute;
+    top: 120px; /* Ensure space below the navigation bar */
+    left: 50%;
+    transform: translateX(-50%); /* Center the image */
+    z-index: 100;
+}
+
+/* Profile Picture */
+.personal-photo {
+    width: 150px; /* Keep a reasonable size */
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover; /* Ensure the image is cropped properly */
+}
+
 /* Section styling for all pages */
 section {
-    margin-top: 80px; /* Create space below the navigation bar */
+    margin-top: 100px; /* Increased spacing below navbar */
     padding: 20px 40px; /* Add padding around the content */
     text-align: left; /* Left-align the content */
 }
